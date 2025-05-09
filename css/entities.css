@@ -1,0 +1,23 @@
+.game-ball {
+    position: absolute;
+    width: 1vh;
+    height: 1vh;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+
+.brick {
+    position: absolute;
+    width: 1vh;
+    height: 1vh;
+    background-color: wheat;
+}
+
+
+.player {
+    position: absolute;
+    width: 1vh;
+    height: 1vh;
+    background-color: firebrick;
+}

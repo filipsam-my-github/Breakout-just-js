@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+}
+
+
+.game-container {
+    display: block;
+    position: relative;
+    height: 80vh;
+    width: 60vh;
+
+    background-color: rgb(19, 16, 16);
+}
+
+
+.game-ball {
+    position: absolute;
+    width: 1vh;
+    height: 1vh;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
