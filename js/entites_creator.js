@@ -6,6 +6,11 @@ export function setHeight(element, vhValue) {
     element.style.height = `${vhValue}vh`;
 }
 
+export function setSize(element, width, height) {
+    setWidth(element, width)
+    setHeight(element, height)
+}
+
 export function setColor(element, color){
     element.style.color = color
 }
@@ -21,5 +26,7 @@ export function createEntity(classes) {
     const entity = document.createElement('div');
     entity.classList.add(...classes.split(' '));
 
+
     return entity
 }
+
