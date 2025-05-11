@@ -17,7 +17,7 @@ export class Game{
     }
 
     changeGameState() {
-        this.game_states[this.last_state].decostructor()
+        this.game_states[this.last_state].destructor()
 
         this.game_states = {
             gameplay: new Gameplay(),
@@ -70,7 +70,7 @@ export class Menu{
         this.checkIfGameOver()
     }
 
-    decostructor(){
+    destructor(){
         const container = document.querySelector('.game-container');
         const divs = container.querySelectorAll('div');
         divs.forEach(div => div.remove());
@@ -98,7 +98,7 @@ class Gameplay{
         }
     }
 
-    decostructor(){
+    destructor(){
         const container = document.querySelector('.game-container');
         const divs = container.querySelectorAll('div');
         divs.forEach(div => div.remove());

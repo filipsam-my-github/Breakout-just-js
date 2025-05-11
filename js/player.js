@@ -9,8 +9,7 @@ export class Player extends mo_Entity.Entity{
         const type_of_entity = "player";
 
         super(x_coord, y_coord, width, height, type_of_entity);
-        this.player_speed = 60
-
+        this.player_speed = 73
     }
 
     interactWhitBorder(){
@@ -47,7 +46,7 @@ export class Player extends mo_Entity.Entity{
         const movment_vector = this.player_speed * dt
 
 
-        if (keys["d"] || keys["ArrowReft"]) {
+        if (keys["d"] || keys["ArrowRight"]) {
             this.changePosition(this.player_speed * dt, 0)
         }
 

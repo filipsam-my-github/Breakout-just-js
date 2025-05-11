@@ -8,7 +8,6 @@ import * as mo_Game from './game.js'
 
 window.addEventListener('keydown', function (event) {
     mo_Globals.keys[event.key] = true
-    console.log(event.key)
 });
 
 window.addEventListener('keyup', function (event) {

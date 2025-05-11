@@ -12,7 +12,7 @@ export class Ball extends mo_Entity.Entity{
         super(x_coord, y_coord, width, height, type_of_entity);
 
         this.bounc_vector = [0, -1]
-        this.speed = 60
+        this.speed = 68
 
         this.have_touched_bottom = false
     }
@@ -54,6 +54,11 @@ export class Ball extends mo_Entity.Entity{
             this.rect.x -= x_movment_vector
             this.rect.y -= y_movment_vector
             collide_with_obj.has_been_hitted = true
+
+            let still_collide_with_obj = this.rect.collide_hiddne_within_the_object(collide_with_obj)
+            if (still_collide_with_obj){
+                this.rect.y = still_collide_with_obj.rect.y - this.rect.height
+            }
         }
     }
 
